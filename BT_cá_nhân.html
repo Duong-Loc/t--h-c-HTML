@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bài tập cá nhân</title>
+</head>
+<style type="text/css">
+	table , th , td {
+		border : 1px solid #ddd;
+	}
+	th , td  {
+		padding : 10px;
+	}
+</style>
+<body>
+	<h1>Project cá nhân 1 </h1>
+	<!--B1: Giới thiệu cá nhân-->
+	<h2>Bài 1 : Giới thiệu bản thân.</h2>
+	<p>Họ và tên :Dương Đức Lộc.<br>Sinh năm :2006.<br>Quê quán : Vĩnh Yên - Vĩnh Phúc</p>
+	<p>Đã học : Trường THPT Kim Ngọc.<br>Hiện đang học : Trường Học Viện Bưu Chính Viễn Thông (Hệ từ xa , liên kết doanh nghiệp).</p>
+	<hr>
+	<!--B2: chèn link nhạc yt mà bạn yêu thích-->
+	<h2>BÀi 2 : bài nhạc mà tôi yêu thích.</h2>
+	<a href="https://www.youtube.com/watch?v=s0id4i-pjm8">đây là bài nhạc mà tôi yêu thích</a>
+	<hr>
+	<!--B3: nhúng địa chỉ thàng phố bạn đang ở-->
+	<h2>Bài 3 : địa chỉ mà bạn đang ở .</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59474.04575335738!2d105.59228159999999!3d21.305963549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134e54d82ea2dbb%3A0x6662a2e2dde60547!2zVHAuIFbEqW5oIFnDqm4sIFbEqW5oIFBow7pj!5e0!3m2!1svi!2s!4v1737616195063!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<hr>
+	<!--B4: tạo form đăng kí bằng bảng -->
+	<h2>Bài 4 : Tạo form bằng bảng </h2>
+	<form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST">
+		<table>
+			<thead>
+				<tr>
+					<th>STT</th>
+					<th colspan="2">....</th>
+					<th colspan="5">Điền thông tin</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td colspan="2">
+						<label for="name">Họ và tên</label>
+					</td>
+					<td colspan="5">
+						<input type="text" name="Ten" id="name" required>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td colspan="2">
+						<label for="Birth_day">Sinh năm</label>
+					</td>
+					<td>
+						<input type="date" name="Year_Birth_Day" id="Birth_day" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td colspan="2">
+						<label for="email">E-mail</label>
+					</td>
+					<td colspan="5">
+						<input type="email" name="Email" id="email" required>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td colspan="2">
+						<p>Giới tính</p>
+					</td>
+					<td colspan="5">
+						<label for="0">Nam</label>
+						<input type="radio" name="Sex" id="0">
+						<label for="1">Nữ</label>
+						<input type="radio" name="Sex" id="1">
+						<label for="2">Khác</label>
+						<input type="radio" name="Sex" id="2">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>	
+	<button>Gửi đăng kí </button>
+</body>
+</html>

@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bài tập tổng hợp</title>
 </head>
+<style type="text/css">
+	table , th , td {
+		border : 1px solid #ddd;
+	}
+	th , td  {
+		padding : 10px;
+	}
+</style>
 <body>
 	<!-- B1 : 7 hằng đẳng thức đáng nhớ -->
 	<h2>Bài 1 : 7 hằng đẳng thức đáng nhớ</h2>
@@ -56,6 +64,61 @@
 		<p>Note:</p>
 		<textarea name="note" rows="5"></textarea><br>
 		<button>Đăng kí</button>
+	</form><hr>
+	<h2>Bài 5 : Tạo form đăng kí bằng bảng</h2>
+	<form>
+		<table>
+			<thead>
+				<tr>
+					<th>STT</th>
+					<th colspan="5">Phiếu đăng kí</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td colspan="5">
+						<label for="name">Họ và tên:</label>
+						<input type="text" name="name" id="name" required>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td colspan="5">
+						<label for="email">E-mail:</label>
+						<input type="email" name="Email" id="email" required>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td colspan="5">
+						<label for="password">Mật khẩu :</label>
+						<input type="password" name="Password" id="password" required>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td colspan="5">
+						<label for="0">Nam</label>
+						<input type="radio" name="Sex" id="0" required><br>
+						<label for="1">Nữ</label>
+						<input type="radio" name="Sex" id="1" required>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td colspan="5">
+						<label for="Birth_day">Năm sinh</label>
+						<input type="date" name="Year_birth_day" id="Birth_day">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6">
+						<button>Gửi phiếu đăng kí</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</form>
 </body>
 </html>
